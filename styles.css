@@ -1,117 +1,308 @@
-body{
-    margin: 0;
-    padding: 0;
-    padding-right: -10px;
-    background-color: rgb(37, 51, 52);
-
+body {
+  margin: 0;
+  padding: 0;
+  padding-right: -10px;
+  background-color: rgb(37, 51, 52);
 }
 
-header{
-    width: 100%;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "area1 area2 area3"
-      ". . ."
-      ". . .";
-    height: 9em;
-    background-color: white;
-    color: green;
-    align-items: center;
+/* header */
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "area1 area2 area3"
+    ". . ."
+    ". . .";
+  height: 9em;
+  background-color: white;
+  color: green;
+  align-items: center;
 }
 
-#img{
-    grid-area: area2;
-    justify-content: center;
-    
+#img {
+  grid-area: area2;
+  justify-content: center;
 }
 
-#img img{
-    width: 6em;
-    padding-left: 13%;
-    padding-right: 10%;
-    padding-top: 5px;
+#img img {
+  width: 6em;
+  padding-left: 13%;
+  padding-right: 10%;
+  padding-top: 5px;
 }
 
-header #primerh1{
-    grid-area: area1;
-    font-family: unbounded;
-    font-size: 1.5em;
-    font-weight: normal;
-    text-align: center;
-    justify-content: center;
+header #primerh1 {
+  grid-area: area1;
+  font-family: unbounded;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  justify-content: center;
 }
 
-header #segundoh1{
-    grid-area: area3;
-    font-family: unbounded;
-    font-size: 1.5em;
-    font-weight: normal;
-    text-align: center;
+header #segundoh1 {
+  grid-area: area3;
+  font-family: unbounded;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
 }
 
-header h2{
-    margin-top: -0.5em;
+header h2 {
+  margin-top: -0.5em;
 }
 
-.parallax{
-    background-image: url("foto2.png");
-    height: 15em;    
+/* header */
+/* efectos parallax */
+
+
+.parallax {
+  background-image: url("img/foto2.png");
+  height: 15em;
+  /* parallax efect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+  background-color: rgb(37, 51, 52);
+  display: flex;
+  flex-direction: column;
+}
+
+#subtitulo {
+  color: white;
+  text-align: left;
+  font-size: 2.5em;
+  text-shadow: 20px 20px 10px black;
+  font-family: archivo black;
+  font-weight: normal;
+  padding-left: 0.5em;
+  margin-top: 2em;
+}
+
+#subtitulo2 {
+  color: white;
+  text-align: left;
+  font-size: 2.5em;
+  text-shadow: 20px 20px 10px black;
+  font-family: archivo black;
+  font-weight: normal;
+  margin-top: -0.8em;
+  padding-left: 3.9em;
+}
+
+#div_quienes_somos {
+  background-color: rgb(37, 51, 52);
+  text-align: left;
+  width: 96%;
+  padding-left: 2%;
+  padding-right: 2%;
+  height: auto;
+  color: white;
+  font-size: 1.5em;
+  font-family: unbounded;
+  line-height: 1.5;
+}
+
+.parallax2 {
+  background-image: url("img/fondo3.jpg");
+  height: 15em;
+  /* parallax efect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#subtitulo_parallax2 {
+  color: white;
+  text-align: left;
+  font-size: 2.5em;
+  text-shadow: 20px 20px 10px black;
+  font-family: archivo black;
+  font-weight: normal;
+  padding-left: 0.3em;
+  padding-top: 1.5em;
+}
+
+#subtitulo2_parallax2 {
+  color: white;
+  text-align: left;
+  font-size: 2.5em;
+  text-shadow: 20px 20px 10px black;
+  font-family: archivo black;
+  font-weight: normal;
+  padding-left: 3.6em;
+  margin-top: -0.8em;
+}
+
+.parallax3 {
+    background-image: url("img/fondo_contacto.png");
+    height: 15em;
     /* parallax efect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -40px;
-    background-color: rgb(37, 51, 52);
+  }
+
+  #subtitulo_parallax3{
+    color: white;
+    text-align: left;
+    font-size: 2.5em;
+    text-shadow: 20px 20px 10px black;
+    font-family: archivo black;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 2em;
+    margin-top: -0.2em;
+  }
+
+  /* efectos parallax */
+
+/* seccion servicios */
+
+#div_servicios {
+  /* grid */
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo1"
+    "texto1"
+    "logo2"
+    "texto2"
+    "logo3"
+    "texto3"
+    "logo4"
+    "texto4";
+  /* propiedades esteticas */
+  background-color: #008000;
+  text-align: left;
+  width: 96%;
+  padding-left: 2%;
+  padding-right: 2%;
+  height: auto;
+  color: white;
+  font-size: 1.5em;
+  font-family: unbounded;
+}
+
+.logo1 {
+  grid-area: logo1;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.texto1 {
+  grid-area: texto1;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.logo2 {
+  grid-area: logo2;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.texto2 {
+  grid-area: texto2;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.logo3 {
+  grid-area: logo3;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.texto3 {
+  grid-area: texto3;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.logo4{
+    grid-area: logo4;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding-top: 1em;
 }
 
-
-#subtitulo{
-    color: white;
-    text-align: left;
-    font-size: 2.5em;
-    text-shadow: 20px 20px 10px black;
-    font-family: archivo black;
-    font-weight: normal;
-    padding-left: 0.5em;
-    margin-top: 2em;
+.texto4{
+    grid-area: texto4;
+    text-align: center;
+    padding-bottom: 1em;
 }
 
-#subtitulo2{
-    color: white;
-    text-align: left;
-    font-size: 2.5em;
-    text-shadow: 20px 20px 10px black;
-    font-family: archivo black;
-    font-weight: normal;
-    margin-top: -0.8em;
-    padding-left: 3.9em;
+/* seccion servicios */
+
+hr{
+    margin-left: 16%;
+    margin-right: 16%;
 }
 
-#div1{
-    background-color: rgb(37, 51, 52);
-    text-align: left;
-    width: 96%;
-    padding-left: 2%;
-    padding-right: 2%;
-    height: auto;
+/* seccion contacto */
+
+#div_contacto {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo_1 numero1"
+      "logo_2 numero2"
+      "logo_3 numero3";
+  }
+  
+  .logo_1 { 
+    grid-area: logo_1;
+    display: grid;
+    place-items: center;
+ }
+  
+  .logo_2 { 
+    grid-area: logo_2;
+    display: grid;
+    place-items: center;
+ }
+  
+  .logo3 { grid-area: logo_3; }
+  
+  .numero1 { 
+    grid-area: numero1;
+    text-align: center;
     color: white;
-    font-size: 1.5em;
     font-family: unbounded;
-}
+    font-size: 1.5em;
+    padding-top: 5%;
+  }
+  
+  .numero2 { 
+    display: flex;
+    grid-area: numero2;
+    text-align: center;
+    color: white;
+    font-family: unbounded;
+    font-size: 1.5em;
+    padding-top: 5%;
 
-.parallax2{
-    background-image: url("fondo2.jpg");
-    min-height: 500px;
-    
-    /* parallax efect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+ }
+  
+  .numero3 { grid-area: numero3; }
+
+  /* seccion contacto */
+  
