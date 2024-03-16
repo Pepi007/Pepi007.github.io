@@ -61,7 +61,7 @@ header h2 {
 
 
 .parallax {
-  background-image: url("img/foto2.png");
+  background-image: url("img/quienes_somos.jpg");
   height: 15em;
   /* parallax efect */
   background-attachment: fixed;
@@ -110,7 +110,7 @@ header h2 {
 }
 
 .parallax2 {
-  background-image: url("img/fondo3.jpg");
+  background-image: url("img/nuestros_servicios.jpg");
   height: 15em;
   /* parallax efect */
   background-attachment: fixed;
@@ -142,7 +142,7 @@ header h2 {
 }
 
 .parallax3 {
-    background-image: url("img/fondo_contacto.png");
+    background-image: url("img/contacto.jpg");
     height: 15em;
     /* parallax efect */
     background-attachment: fixed;
@@ -202,49 +202,66 @@ header h2 {
   padding-top: 1em;
 }
 
+.logo1 img{
+  width: 25%;
+}
+
 .texto1 {
   grid-area: texto1;
   text-align: center;
-  padding-bottom: 1em;
+  font-size: 20px;
 }
 
 .logo2 {
   grid-area: logo2;
   display: flex;
   justify-content: center;
-  padding-top: 1em;
+}
+
+.logo2 img{
+  width: 40%;
 }
 
 .texto2 {
   grid-area: texto2;
   text-align: center;
-  padding-bottom: 1em;
+  font-size: 20px;
+
 }
 
 .logo3 {
   grid-area: logo3;
   display: flex;
   justify-content: center;
-  padding-top: 1em;
+}
+
+.logo3 img{
+  width: 35%;
 }
 
 .texto3 {
   grid-area: texto3;
   text-align: center;
-  padding-bottom: 1em;
+  font-size: 20px;
+
 }
 
 .logo4{
     grid-area: logo4;
     display: flex;
     justify-content: center;
-    padding-top: 1em;
+}
+
+.logo4 img{
+  width: 35%;
 }
 
 .texto4{
     grid-area: texto4;
     text-align: center;
     padding-bottom: 1em;
+    font-size: 20px;
+
 }
 
 /* seccion servicios */
@@ -252,20 +269,22 @@ header h2 {
 hr{
     margin-left: 16%;
     margin-right: 16%;
+    color: white;
+    border: 0.5px solid white;
 }
 
 /* seccion contacto */
 
 #div_contacto {  display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 35% 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "logo_1 numero1"
-      "logo_2 numero2"
-      "logo_3 numero3";
+      "logo_3 numero3"
+      "logo_2 numero2";
   }
   
   .logo_1 { 
@@ -273,6 +292,7 @@ hr{
     display: grid;
     place-items: center;
  }
+
   
   .logo_2 { 
     grid-area: logo_2;
@@ -280,29 +300,46 @@ hr{
     place-items: center;
  }
   
-  .logo3 { grid-area: logo_3; }
+  .logo_3 { 
+    grid-area: logo_3;
+    display: grid;
+    place-items: center;
+}
+
   
   .numero1 { 
+    display: grid;
     grid-area: numero1;
-    text-align: center;
+    place-items: center;
     color: white;
     font-family: unbounded;
     font-size: 1.5em;
     padding-top: 5%;
+    padding-right: 20%;
   }
   
   .numero2 { 
-    display: flex;
+    display: grid;
     grid-area: numero2;
-    text-align: center;
+    place-items: center;
     color: white;
     font-family: unbounded;
     font-size: 1.5em;
     padding-top: 5%;
+    padding-right: 20%;
 
  }
   
-  .numero3 { grid-area: numero3; }
+  .numero3 {
+     grid-area: numero3; 
+     display: grid;
+     place-items: center;
+     color: white;
+     font-family: unbounded;
+     font-size: 1.5em;
+     padding-top: 5%;
+     padding-right: 20%;
+    }
 
   /* seccion contacto */
   
