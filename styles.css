@@ -60,7 +60,7 @@ header h2 {
 /* efectos parallax */
 
 .parallax {
-  background-image: url("img/quienes_somos.jpg");
+  background-image: url("img/quienes_somos.webp");
   height: 15em;
   /* parallax efect */
   background-attachment: fixed;
@@ -109,7 +109,7 @@ header h2 {
 }
 
 .parallax2 {
-  background-image: url("img/nuestros_servicios.jpg");
+  background-image: url("img/nuestros_servicios.webp");
   height: 15em;
   /* parallax efect */
   background-attachment: fixed;
@@ -141,7 +141,7 @@ header h2 {
 }
 
 .parallax3 {
-  background-image: url("img/contacto.jpg");
+  background-image: url("img/contacto.webp");
   height: 15em;
   /* parallax efect */
   background-attachment: fixed;
@@ -325,6 +325,15 @@ hr {
   padding-bottom: 25px;
 }
 
+.numero2 a{
+  text-decoration: none;
+  color: white;
+}
+
+.numero2 a:hover{
+  color: brown;
+}
+
 .numero3 {
   grid-area: numero3;
   display: grid;
@@ -503,6 +512,7 @@ hr {
 .numero2 {
   font-size: 30px;
   text-align: left;
+  text-decoration: none;
 }
 
 }
